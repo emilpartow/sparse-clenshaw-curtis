@@ -1,17 +1,15 @@
 # Sparse Clenshaw–Curtis Quadrature
 
 Efficient, flexible Python implementation of sparse grid integration for high-dimensional problems using Clenshaw–Curtis quadrature nodes.  
-This project demonstrates the construction, application, and convergence of Smolyak-type sparse grids on the unit hypercube $[0,1]^d$.
+This project demonstrates the construction, application, and convergence of Smolyak-type sparse grids on cubes $[a,b]^d$.
 
 ---
 
 ## Features
 
-- Sparse grid quadrature in arbitrary dimensions
+- (Smolyak) Sparse grid quadrature in arbitrary dimensions
 - Clenshaw–Curtis nodes and weights with closed nonlinear growth rule
-- Easy integration of arbitrary functions over $[0,1]^d$
-- Plotting and convergence study tools
-- Modern, documented, and extendable code
+- Easy integration of arbitrary functions over $[a,b]^d$
 
 ---
 
@@ -33,7 +31,11 @@ Clone the repository:
 git clone https://github.com/<your-username>/sparse-clenshaw-curtis.git
 cd sparse-clenshaw-curtis
 
-Install dependencies (preferably in a virtual environment):
+```markdown
+
+---
+
+## Install dependencies (preferably in a virtual environment):
 
 ```sh
 pip install numpy matplotlib modepy
