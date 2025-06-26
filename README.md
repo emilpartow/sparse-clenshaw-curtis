@@ -32,7 +32,27 @@ git clone https://github.com/<your-username>/sparse-clenshaw-curtis.git
 cd sparse-clenshaw-curtis
 ```
 
+---
+
 ## Install dependencies (preferably in a virtual environment):
 
 ```sh
 pip install numpy matplotlib modepy
+```
+
+---
+## Usage Example
+Integrate a function over $[0,1]^2$ using the sparse grid quadrature:
+```python
+from sparse_clenshaw_curtis import sparse_grid_nodes_weights
+
+def f(x):
+    return x[0] * x[1]
+
+dim = 2
+level = 5
+
+nodes, weights = sparse_grid_nodes_weights(dim, level)
+integral_approx = (weights * [f(xi) for xi in nodes]).sum()
+print(f"Approximate integral: {integral_approx:.8f}")
+```
