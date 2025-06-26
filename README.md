@@ -33,6 +33,7 @@ Clone the repository:
 git clone https://github.com/<your-username>/sparse-clenshaw-curtis.git
 cd sparse-clenshaw-curtis
 
-## Install dependencies (preferably in a virtual environment):
+Install dependencies (preferably in a virtual environment):
+
 ```sh
 pip install numpy matplotlib modepy
