@@ -52,7 +52,7 @@ def f(x):
 dim = 2
 level = 5
 
-nodes, weights = sparse_grid_nodes_weights(dim, level)
+nodes, weights = sparse_grid_nodes_weights(dim, level, a = 0, b = 1)
 integral_approx = (weights * [f(xi) for xi in nodes]).sum()
 print(f"Approximate integral: {integral_approx:.8f}")
 ```
