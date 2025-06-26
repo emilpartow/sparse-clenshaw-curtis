@@ -15,6 +15,12 @@ This project demonstrates the construction, application, and convergence of Smol
 
 ## Mathematical Background
 
+Given $a < b$, a weight function $\omega \colon [a,b] \to (0,\infty)$, and an integrand $f \colon [a,b] \to \mathbb{R}$, a univariate $m$-point \emph{quadrature rule} is a set of $m$ nodes and weights $(w_j, \xi_j)_{j=1}^m \subset \mathbb{R} \times [a,b]$ used to approximate the weighted integral
+\[
+\int_a^b f(x) \omega(x)\, dx
+\]
+by the discrete sum $\sum_{j=1}^m w_j f(\xi_j).$
+
 Sparse grid quadrature provides efficient numerical integration for high-dimensional functions, drastically reducing the number of required points compared to full tensor grids.  
 The approach is based on the **Smolyak algorithm** and uses **Clenshaw–Curtis** quadrature rules as the one-dimensional building block.
 
