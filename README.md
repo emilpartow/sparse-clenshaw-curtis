@@ -30,7 +30,7 @@ Clone the repository:
 ```sh
 git clone https://github.com/<your-username>/sparse-clenshaw-curtis.git
 cd sparse-clenshaw-curtis
-sh```
+```sh
 
 ## Install dependencies (preferably in a virtual environment):
 
